@@ -13,15 +13,15 @@ This project contains...
 
 To start the project just...
 
-* Step one
-* Step two
+* Make sure you have javac 8 installed and activated. 
+* Enter `mvn test` at the prompt to run all tests.
 
 
 
 
 ## Something else
 
-Code block skould be indented with a tab
+Code block should be indented with a tab
 at left.
 
 	for (int i=0; i<10; i++) {
