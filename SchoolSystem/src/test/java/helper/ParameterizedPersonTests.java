@@ -1,3 +1,5 @@
+package helper;
+
 import static org.junit.Assert.assertEquals;
 
 import java.util.Arrays;
@@ -26,7 +28,7 @@ public class ParameterizedPersonTests {
 	public static Iterable<Object[]> data() {
 		return Arrays.asList(new Object[][] { 
 			{ "John", "Smith", 35 }, 
-			{ null, "Smith", 36 }, 
+			{ null, "Smith", 35 },
 			{ "John", null, 35 }
 		});
 	}
@@ -36,7 +38,7 @@ public class ParameterizedPersonTests {
 		Person person = new Person("800430-9350", firstName, lastName);
 		assertEquals("Unexpected first name in new Person", firstName, person.getFirstName());
 		assertEquals("Unexpected last name in new Person", lastName, person.getLastName());
-		assertEquals("Unexpected age in new Person", expAge, person.getAge());
+		assertEquals("Unexpected age in new Person "+person.getFirstName(), expAge, person.getAge());
 	}
 }
 

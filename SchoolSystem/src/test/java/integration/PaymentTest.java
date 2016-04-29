@@ -1,3 +1,5 @@
+package integration;
+
 import static org.junit.Assert.*;
 
 import java.time.LocalDateTime;
