@@ -34,7 +34,7 @@ public class PersonalNumber {
 		}
 		sum %= 10;
 		if ((toInt(t,9) + sum) % 10 != 0) {
-			throw new IllegalArgumentException("Not a valid Swedish personal number - invalid checksum!");
+			throw new IllegalArgumentException("Not a valid Swedish personal number (" + s + ") - invalid checksum (" + sum + ")!");
 		}
 
 		number = s;
