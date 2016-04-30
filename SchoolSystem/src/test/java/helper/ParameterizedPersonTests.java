@@ -27,9 +27,9 @@ public class ParameterizedPersonTests {
 	@Parameters(name = "{index}: {0},{1}")
 	public static Iterable<Object[]> data() {
 		return Arrays.asList(new Object[][] { 
-			{ "John", "Smith", 35 }, 
-			{ null, "Smith", 35 },
-			{ "John", null, 35 }
+			{ "John", "Smith", 36 },
+			{ null, "Smith", 36 },
+			{ "John", null, 36 }
 		});
 	}
 
